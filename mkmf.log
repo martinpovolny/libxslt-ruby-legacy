@@ -1,0 +1,60 @@
+have_library: checking for atan() in -lm... -------------------- yes
+
+"gcc -o conftest -I/usr/lib/ruby/1.8/i386-linux -I/usr/lib/ruby/1.8/i386-linux  -Wall -g -O2 -fPIC conftest.c  -L"/usr/lib" -L"/usr/lib"     -lruby1.8-static -lm  -lpthread -ldl -lcrypt -lm  -lc"
+conftest.c: In function `t':
+conftest.c:4: warning: implicit declaration of function `atan'
+checked program was:
+/* begin */
+
+/*top*/
+int main() { return 0; }
+int t() { atan(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for inflate() in -lz... -------------------- yes
+
+"gcc -o conftest -I/usr/lib/ruby/1.8/i386-linux -I/usr/lib/ruby/1.8/i386-linux  -Wall -g -O2 -fPIC conftest.c  -L"/usr/lib" -L"/usr/lib"    -lm  -lruby1.8-static -lz -lm  -lpthread -ldl -lcrypt -lm  -lc"
+conftest.c: In function `t':
+conftest.c:4: warning: implicit declaration of function `inflate'
+checked program was:
+/* begin */
+
+/*top*/
+int main() { return 0; }
+int t() { inflate(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for xmlXPtrNewRange() in -lxml2... -------------------- yes
+
+"gcc -o conftest -I/usr/lib/ruby/1.8/i386-linux -I/usr/lib/ruby/1.8/i386-linux  -Wall -g -O2 -fPIC conftest.c  -L"/usr/lib" -L"/usr/lib"    -lz -lm  -lruby1.8-static -lxml2 -lz -lm  -lpthread -ldl -lcrypt -lm  -lc"
+conftest.c: In function `t':
+conftest.c:4: warning: implicit declaration of function `xmlXPtrNewRange'
+checked program was:
+/* begin */
+
+/*top*/
+int main() { return 0; }
+int t() { xmlXPtrNewRange(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for xsltApplyStylesheet() in -lxslt... -------------------- yes
+
+"gcc -o conftest -I/usr/lib/ruby/1.8/i386-linux -I/usr/lib/ruby/1.8/i386-linux  -Wall -g -O2 -fPIC conftest.c  -L"/usr/lib" -L"/usr/lib"    -lxml2 -lz -lm  -lruby1.8-static -lxslt -lxml2 -lz -lm  -lpthread -ldl -lcrypt -lm  -lc"
+conftest.c: In function `t':
+conftest.c:4: warning: implicit declaration of function `xsltApplyStylesheet'
+checked program was:
+/* begin */
+
+/*top*/
+int main() { return 0; }
+int t() { xsltApplyStylesheet(); return 0; }
+/* end */
+
+--------------------
+
